@@ -533,7 +533,7 @@ class GameScene extends BaseLayeredScene {
 
         if (this.isGameover) {
             if (Input.key.isPress(Input.key.a() + 19)) {
-                window.open(`http://twitter.com/?status=EatCoinで${this.player.material.mass * 10 - 50}のコインを獲得した。 http://eatcoin.yuu.trap.show/  #traP3jam`, `_blank`);
+                window.open(`http://twitter.com/?status=EatCoinで${this.player.material.mass * 10 - 50}のコインを獲得した。 http://eatcoin.yuu.trap.show  #traP3jam`, `_blank`);
             }
             if (Input.key.isPress(Input.key.up()) || Input.key.isPress(Input.key.a() + 25) || Input.mouse.isPress(Input.mouse.mLeft())) {
                 this.initStage();
