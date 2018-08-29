@@ -1,9 +1,27 @@
 {
-    "width": 6000,
+    "name": "Eat coins!  Do not get pushed out!",
+    "width": 800,
     "height": 600,
+    "transition": {
+        "type": "curtain",
+        "nameTime": 2,
+        "transitionTime": 1
+    },
     "background": {
         "type": "Sequential",
-        "backs": []
+        "backs": [{
+            "type": "Area",
+            "x": 0,
+            "y": 0,
+            "width": 800,
+            "height": 600,
+            "image": {
+                "type": "single",
+                "width": 1024,
+                "height": 1024,
+                "file": "air.png"
+            }
+        }]
     },
     "camera": {
         "moving": true,
