@@ -1,0 +1,19 @@
+{
+  "name": "under-game-engine",
+  "version": "1.0.0",
+  "description": "Under game engine project",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Expine/Under.git"
+  },
+  "author": "Expine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Expine/Under/issues"
+  },
+  "homepage": "https://github.com/Expine/Under#readme",
+  "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-google": "^0.9.1"
+  }
+}

@@ -1,0 +1,5 @@
+/memo/
+/jsdoc/
+/node_modules/
+*.class
+*.mp3

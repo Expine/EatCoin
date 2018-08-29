@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "extends": "google",
+    "rules": {
+        "linebreak-style": ["error", "windows"],
+        "require-jsdoc": "off",
+        "valid-jsdoc": "off",
+        "max-len": "off",
+        "no-var": "off",
+        "no-invalid-this": "off"
+    }
+}
