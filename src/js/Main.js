@@ -21,12 +21,12 @@ class EatPlayer extends Player {
 }
 
 /**
- * Enemy respawn entity
+ * Enemy respawn entityenemy
  * - Object present on the stage that has coordinate and size
  * - Generate some entity
  * - ### Generates enemy
  * @extends {RespawnEntity}
- * @classdesc Enemy respawn entity to generate enemy
+ * @classdesc Enemy respawn entity to generate 
  */
 class EREntity extends EnemyRespawnEntity { // eslint-disable-line  no-unused-vars
     constructor(respawnInterval, respawnMax, dirX) {
@@ -533,7 +533,7 @@ class GameScene extends BaseLayeredScene {
 
         if (this.isGameover) {
             if (Input.key.isPress(Input.key.a() + 19)) {
-                window.open(`http://twitter.com/?status=EatCoinで${this.player.material.mass * 10 - 50}獲得した！`, `_blank`);
+                window.open(`http://twitter.com/?status=EatCoinで${this.player.material.mass * 10 - 50}獲得した！ \nhttp://eatcoin.yuu.trap.show/`, `_blank`);
             }
             if (Input.key.isPress(Input.key.up()) || Input.key.isPress(Input.key.a() + 25) || Input.mouse.isPress(Input.mouse.mLeft())) {
                 this.initStage();
