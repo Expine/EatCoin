@@ -1,0 +1,310 @@
+{
+    "entities": [{
+            "id": 100000,
+            "type": "EatPlayer",
+            "width": 32,
+            "height": 32,
+            "collider": {
+                "type": "RoundRectangle",
+                "startX": 0,
+                "startY": 0,
+                "width": 30,
+                "height": 30,
+                "cut": 5
+            },
+            "body": {
+                "type": "Player",
+                "material": {
+                    "type": "Mutable",
+                    "k": 10,
+                    "frictionX": 1.0,
+                    "frictionY": 0.0
+                }
+            },
+            "material": {
+                "mass": 5,
+                "elasticity": 0.5,
+                "mu": 0.95
+            },
+            "ai": [{
+                "type": "PBStateAI"
+            }],
+            "image": {
+                "type": "multianime",
+                "file": "player.png",
+                "directional": false,
+                "width": 32,
+                "height": 32,
+                "animations": [{
+                    "x": 0,
+                    "y": 0,
+                    "width": 32,
+                    "height": 32,
+                    "delta": 200,
+                    "serial": true,
+                    "names": [
+                        ["stationary"],
+                        ["jump", "djump"],
+                        ["grab"],
+                        ["fail"]
+                    ],
+                    "loops": [
+                        [true],
+                        [true],
+                        [true],
+                        [true]
+                    ],
+                    "deltas": [
+                        [200],
+                        [200],
+                        [200],
+                        [200]
+                    ],
+                    "number": 4,
+                    "horizontal": 4,
+                    "vertical": 4
+                }]
+            }
+        },
+        {
+            "id": 100001,
+            "type": "Enemy",
+            "image": {
+                "type": "anime",
+                "file": "coin.png",
+                "directional": true,
+                "width": 32,
+                "height": 32,
+                "loop": true,
+                "animation": [{
+                    "x": 0,
+                    "y": 0,
+                    "width": 32,
+                    "height": 32,
+                    "delta": 200,
+                    "serial": true,
+                    "horizontal": 4,
+                    "vertical": 1
+                }]
+            },
+            "width": 32,
+            "height": 32,
+            "collider": {
+                "type": "RoundRectangle",
+                "startX": 0,
+                "startY": 0,
+                "width": 32,
+                "height": 32,
+                "cut": 5
+            },
+            "material": {
+                "mass": 20,
+                "elasticity": 0.5,
+                "mu": 0.0
+            },
+            "ai": [{
+                "type": "CoinAI",
+                "ai": {
+                    "type": "BounceAI",
+                    "mvx": 100,
+                    "px": 1000,
+                    "jpmax": 800,
+                    "jpmin": 300
+                }
+            }]
+        }, {
+            "id": 100002,
+            "type": "Enemy",
+            "image": {
+                "type": "anime",
+                "file": "coin.png",
+                "directional": true,
+                "width": 64,
+                "height": 64,
+                "loop": true,
+                "animation": [{
+                    "x": 0,
+                    "y": 0,
+                    "width": 32,
+                    "height": 32,
+                    "delta": 200,
+                    "serial": true,
+                    "horizontal": 4,
+                    "vertical": 1
+                }]
+            },
+            "width": 64,
+            "height": 64,
+            "collider": {
+                "type": "RoundRectangle",
+                "startX": 0,
+                "startY": 0,
+                "width": 64,
+                "height": 64,
+                "cut": 10
+            },
+            "material": {
+                "mass": 500,
+                "elasticity": 0.5,
+                "mu": 0.0
+            },
+            "ai": [{
+                "type": "CoinAI",
+                "ai": {
+                    "type": "BounceAI",
+                    "mvx": 100,
+                    "px": 1000,
+                    "jpmax": 800,
+                    "jpmin": 300
+                }
+            }]
+        }, {
+            "id": 100003,
+            "type": "Enemy",
+            "image": {
+                "type": "anime",
+                "file": "coin.png",
+                "directional": true,
+                "width": 128,
+                "height": 128,
+                "loop": true,
+                "animation": [{
+                    "x": 0,
+                    "y": 0,
+                    "width": 32,
+                    "height": 32,
+                    "delta": 200,
+                    "serial": true,
+                    "horizontal": 4,
+                    "vertical": 1
+                }]
+            },
+            "width": 128,
+            "height": 128,
+            "collider": {
+                "type": "RoundRectangle",
+                "startX": 0,
+                "startY": 0,
+                "width": 128,
+                "height": 128,
+                "cut": 20
+            },
+            "material": {
+                "mass": 10000,
+                "elasticity": 0.5,
+                "mu": 0.0
+            },
+            "ai": [{
+                "type": "CoinAI",
+                "ai": {
+                    "type": "BounceAI",
+                    "mvx": 100,
+                    "px": 1000,
+                    "jpmax": 800,
+                    "jpmin": 300
+                }
+            }]
+        },
+        {
+            "id": 100004,
+            "type": "Enemy",
+            "image": {
+                "type": "anime",
+                "file": "mud.png",
+                "directional": true,
+                "width": 64,
+                "height": 64,
+                "loop": true,
+                "animation": [{
+                    "x": 0,
+                    "y": 0,
+                    "width": 32,
+                    "height": 32,
+                    "delta": 200,
+                    "serial": true,
+                    "horizontal": 3,
+                    "vertical": 1
+                }]
+            },
+            "width": 64,
+            "height": 64,
+            "collider": {
+                "type": "RoundRectangle",
+                "startX": 0,
+                "startY": 34,
+                "width": 64,
+                "height": 30,
+                "cut": 5
+            },
+            "material": {
+                "mass": 200,
+                "elasticity": 0.1,
+                "mu": 0.95
+            },
+            "ai": [{
+                "type": "SAI",
+                "mvx": 100,
+                "px": 1000
+            }]
+        }, {
+            "id": 100005,
+            "type": "Enemy",
+            "image": {
+                "type": "anime",
+                "file": "mud.png",
+                "directional": true,
+                "width": 64,
+                "height": 64,
+                "loop": true,
+                "animation": [{
+                    "x": 0,
+                    "y": 0,
+                    "width": 32,
+                    "height": 32,
+                    "delta": 200,
+                    "serial": true,
+                    "horizontal": 3,
+                    "vertical": 1
+                }]
+            },
+            "width": 64,
+            "height": 64,
+            "collider": {
+                "type": "RoundRectangle",
+                "startX": 0,
+                "startY": 34,
+                "width": 64,
+                "height": 30,
+                "cut": 5
+            },
+            "material": {
+                "mass": 200,
+                "elasticity": 0.1,
+                "mu": 0.95
+            },
+            "ai": [{
+                "type": "SAI",
+                "mvx": 100,
+                "px": -1000
+            }]
+        }, {
+            "id": 100014,
+            "type": "EREntity",
+            "width": 32,
+            "height": 32,
+            "interval": 3,
+            "max": 300,
+            "dirX": -1,
+            "enemies": [100001, 100002, 100003]
+        }, {
+            "id": 100015,
+            "type": "EREntity",
+            "width": 32,
+            "height": 32,
+            "interval": 3,
+            "max": 300,
+            "dirX": 1,
+            "enemies": [100001, 100002, 100003, 100004]
+        }
+    ]
+}

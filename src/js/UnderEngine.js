@@ -10492,7 +10492,7 @@ class TileBuilder extends EntityBuilder { // eslint-disable-line  no-unused-vars
             case `Rectangle`:
                 return new RectangleCollider(collider.startX, collider.startY, collider.width, collider.height);
             case `Circle`:
-                return new CircleCollider(ret.radius, ret.shiftX, ret.shiftY);
+                return new CircleCollider(collider.radius, collider.shiftX, collider.shiftY);
             case `RoundRectangle`:
                 return new RoundRectangleCollider(collider.startX, collider.startY, collider.width, collider.height, collider.cut);
             default:

@@ -1,0 +1,27 @@
+{
+    "tiles": [{
+        "file": "prairie.png",
+        "chips": [{
+            "id": 0,
+            "auto": true,
+            "terrain": 0,
+            "image": {
+                "type": "tile",
+                "x": 0,
+                "y": 0,
+                "width": 32,
+                "height": 32
+            },
+            "material": {
+                "mass": 10,
+                "elasticity": 0.2,
+                "mu": 0.1
+            },
+            "width": 32,
+            "height": 32,
+            "serial": true,
+            "horizontal": 8,
+            "vertical": 6
+        }]
+    }]
+}
