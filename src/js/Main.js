@@ -26,7 +26,7 @@ class EatPlayer extends Player {
  * - Generate some entity
  * - ### Generates enemy
  * @extends {RespawnEntity}
- * @classdesc Enemy respawn entity to generate 
+ * @classdesc Enemy respawn entity to generate
  */
 class EREntity extends EnemyRespawnEntity { // eslint-disable-line  no-unused-vars
     constructor(respawnInterval, respawnMax, dirX) {
@@ -533,7 +533,7 @@ class GameScene extends BaseLayeredScene {
 
         if (this.isGameover) {
             if (Input.key.isPress(Input.key.a() + 19)) {
-                window.open(`http://twitter.com/?status=EatCoinで${this.player.material.mass * 10 - 50}獲得した！ \nhttp://eatcoin.yuu.trap.show/`, `_blank`);
+                window.open(`http://twitter.com/?status=EatCoinで${this.player.material.mass * 10 - 50}のコインを獲得した。 \nhttp://eatcoin.yuu.trap.show/ \n#trap3jam`, `_blank`);
             }
             if (Input.key.isPress(Input.key.up()) || Input.key.isPress(Input.key.a() + 25) || Input.mouse.isPress(Input.mouse.mLeft())) {
                 this.initStage();
